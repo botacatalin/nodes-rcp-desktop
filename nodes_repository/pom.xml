@@ -41,7 +41,7 @@
         <products>
           <product>
             <id>nodes.product</id>
-            <rootFolder>nodes</rootFolder>
+            <rootFolder>nodes.product</rootFolder>
           </product>
         </products>
         <formats>
