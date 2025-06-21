@@ -1,0 +1,46 @@
+# === Eclipse IDE files ===
+# Project settings
+.project
+.classpath
+.settings/
+
+# Eclipse launch configs
+*.launch
+
+# Local workspace metadata
+/.metadata/
+/*.log
+
+# === Java build output ===
+# Compiled class files
+**/bin/
+**/build/
+/**/target/classes/
+/**/target/
+
+# Eclipse automatic builders
+/**/*.externalToolBuilders/
+/**/build.properties
+
+# === Maven & Tycho ===
+# Maven target directories
+**/target/
+# Tycho generated update site, repository, etc.
+nodes_repository/target/
+# Product build outputs
+**/products/
+
+# === OS or tool-specific ===
+# Mac
+.DS_Store
+# Windows
+Thumbs.db
+# JetBrains IDEs (if you ever open with IntelliJ)
+/.idea/
+/*.iml
+
+# === Misc ===
+# Generated machine keys, caches, temp files
+*.tmp
+*.bak
+*.swp

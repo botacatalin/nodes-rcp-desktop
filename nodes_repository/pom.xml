@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project 
+    xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+      http://maven.apache.org/POM/4.0.0 
+      https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>parent-pom</groupId>
+    <artifactId>parent-pom</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>nodes_repository</artifactId>
+  <packaging>eclipse-repository</packaging>
+
+ <build>
+  <plugins>
+    <plugin>
+      <groupId>org.eclipse.tycho</groupId>
+      <artifactId>tycho-p2-director-plugin</artifactId>
+      <version>${tycho-version}</version>
+      <executions>
+        <execution>
+          <id>materialize-products</id>
+          <goals>
+            <goal>materialize-products</goal>
+          </goals>
+        </execution>
+        <execution>
+          <id>archive-products</id>
+          <goals>
+            <goal>archive-products</goal>
+          </goals>
+        </execution>
+      </executions>
+      <configuration>
+        <products>
+          <product>
+            <id>nodes.product</id>
+            <rootFolder>nodes</rootFolder>
+          </product>
+        </products>
+        <formats>
+          <format>win32.win32.x86_64</format>
+          <format>linux.gtk.x86_64</format>
+          <format>macosx.cocoa.x86_64</format>
+        </formats>
+      </configuration>
+    </plugin>
+  </plugins>
+</build>
+
+</project>

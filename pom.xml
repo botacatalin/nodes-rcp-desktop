@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project 
+    xmlns="http://maven.apache.org/POM/4.0.0" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="
+      http://maven.apache.org/POM/4.0.0 
+      https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>parent-pom</groupId>
+  <artifactId>parent-pom</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <properties>
+    <tycho-version>4.0.13</tycho-version>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <maven.compiler.source>21</maven.compiler.source>
+    <maven.compiler.target>21</maven.compiler.target>
+  </properties>
+
+  <!-- So Maven can fetch Tycho’s plugins -->
+  <pluginRepositories>
+    <pluginRepository>
+      <id>eclipse-tycho-releases</id>
+      <url>https://repo.eclipse.org/content/repositories/tycho-releases/</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </pluginRepository>
+  </pluginRepositories>
+
+  <build>
+  
+  
+  
+    <!-- Load Tycho early so Eclipse packaging is recognized -->
+    <extensions>
+      <extension>
+        <groupId>org.eclipse.tycho</groupId>
+        <artifactId>tycho-maven-plugin</artifactId>
+        <version>${tycho-version}</version>
+      </extension>
+    </extensions>
+
+
+
+  <plugins>
+    <plugin>
+      <groupId>org.eclipse.tycho</groupId>
+      <artifactId>target-platform-configuration</artifactId>
+      <configuration>
+        <target>
+          <artifact>
+            <groupId>parent-pom</groupId>
+            <artifactId>nodes_target</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+          </artifact>
+        </target>
+      </configuration>
+    </plugin>
+  </plugins>
+    <!-- Central version management for Tycho plugins -->
+    <pluginManagement>
+      <plugins>
+        <!-- Core Tycho support -->
+        <plugin>
+          <groupId>org.eclipse.tycho</groupId>
+          <artifactId>tycho-maven-plugin</artifactId>
+          <version>${tycho-version}</version>
+        </plugin>
+        <!-- Target‐platform configurator -->
+        <plugin>
+          <groupId>org.eclipse.tycho</groupId>
+          <artifactId>target-platform-configuration</artifactId>
+          <version>${tycho-version}</version>
+        </plugin>
+        <!-- P2 repository assembler -->
+        <plugin>
+          <groupId>org.eclipse.tycho</groupId>
+          <artifactId>tycho-p2-repository-plugin</artifactId>
+          <version>${tycho-version}</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+
+  <modules>
+    <!-- must be first so the .target is applied before any plugins/features -->
+    <module>nodes_target</module>
+    <module>nodes_plugin</module>
+    <module>nodes_feature</module>
+    <module>nodes_repository</module>
+  </modules>
+
+</project>
