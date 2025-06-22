@@ -8,12 +8,16 @@
     </children>
     <mainMenu xmi:id="_PSekAE-IEfCyO64_2PFqEg" elementId="nodes_plugin.menu.0">
       <children xsi:type="menu:Menu" xmi:id="_QPXDAE-IEfCyO64_2PFqEg" elementId="nodes_plugin.menu.nodes" label="Actions">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_yuQqsE-JEfCyO64_2PFqEg" elementId="nodes_plugin.handledmenuitem.about" label="About" command="_hcFYQE-JEfCyO64_2PFqEg"/>
+        <children xsi:type="menu:MenuSeparator" xmi:id="_nyJwME-OEfCyO64_2PFqEg" elementId="nodes_plugin.menuseparator.0"/>
         <children xsi:type="menu:HandledMenuItem" xmi:id="_RBr30E-IEfCyO64_2PFqEg" elementId="nodes_plugin.handledmenuitem.exit" label="Exit" command="_ZnP_cE-IEfCyO64_2PFqEg"/>
       </children>
     </mainMenu>
   </children>
   <handlers xmi:id="_gZr8kE-IEfCyO64_2PFqEg" elementId="nodes_plugin.handler.0" contributionURI="bundleclass://nodes_plugin/handlers.ExitHandler" command="_ZnP_cE-IEfCyO64_2PFqEg"/>
+  <handlers xmi:id="_mMHYwE-JEfCyO64_2PFqEg" elementId="nodes_plugin.handler.1" contributionURI="bundleclass://nodes_plugin/handlers.About" command="_hcFYQE-JEfCyO64_2PFqEg"/>
   <commands xmi:id="_ZnP_cE-IEfCyO64_2PFqEg" elementId="nodes_plugin.command.ronodesuiexit" commandName="ro.nodes.ui.exit"/>
+  <commands xmi:id="_hcFYQE-JEfCyO64_2PFqEg" elementId="nodes_plugin.command.ronodesuiabout" commandName="ro.nodes.ui.about"/>
   <addons xmi:id="__0UdgU6CEfCE4-cIOn63pQ" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
   <addons xmi:id="__0Udgk6CEfCE4-cIOn63pQ" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
   <addons xmi:id="__0Udg06CEfCE4-cIOn63pQ" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
