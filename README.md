@@ -8,7 +8,7 @@
 
 [![GitHub][github-badge]][source]
 
-[source]: https://github.com/botacatalin/nodes-rcp-desktop  
+[source]: https://github.com/botacatalin/nodes-rcp-desktop.git
 [github-badge]: https://img.shields.io/badge/GitHub-Source%20Code-blue?logo=github
 
 ---
