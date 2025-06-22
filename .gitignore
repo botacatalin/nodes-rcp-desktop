@@ -20,7 +20,6 @@
 
 # Eclipse automatic builders
 /**/*.externalToolBuilders/
-/**/build.properties
 
 # === Maven & Tycho ===
 # Maven target directories
