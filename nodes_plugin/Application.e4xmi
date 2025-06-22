@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="ASCII"?>
-<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmi:id="__0UdgE6CEfCE4-cIOn63pQ" elementId="nodes_plugin.application">
-  <children xsi:type="basic:TrimmedWindow" xmi:id="_RCVxQE6aEfCE4-cIOn63pQ" elementId="nodes_plugin.trimmedwindow.nodes" label="Nodes">
-    <children xsi:type="basic:PartStack" xmi:id="_j-5h4E6aEfCE4-cIOn63pQ" elementId="nodes_plugin.partstack.0">
-      <children xsi:type="basic:Part" xmi:id="_lbNu4E6aEfCE4-cIOn63pQ" elementId="nodes_plugin.part.mainnode" contributionURI="bundleclass://nodes_plugin/parts.Hello" label="Main Node" closeable="true"/>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="__0UdgE6CEfCE4-cIOn63pQ" elementId="nodes_plugin.application">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_RCVxQE6aEfCE4-cIOn63pQ" elementId="nodes_plugin.trimmedwindow.nodes" label="Nodes Application">
+    <children xsi:type="basic:PartSashContainer" xmi:id="_utyJwE-HEfCyO64_2PFqEg" elementId="nodes_plugin.partsashcontainer.0">
+      <children xsi:type="basic:PartStack" xmi:id="_wbawQE-HEfCyO64_2PFqEg" elementId="nodes_plugin.partstack.0">
+        <children xsi:type="basic:Part" xmi:id="_xMTaoE-HEfCyO64_2PFqEg" elementId="nodes_plugin.part.generalview" label="General View"/>
+      </children>
     </children>
+    <mainMenu xmi:id="_PSekAE-IEfCyO64_2PFqEg" elementId="nodes_plugin.menu.0">
+      <children xsi:type="menu:Menu" xmi:id="_QPXDAE-IEfCyO64_2PFqEg" elementId="nodes_plugin.menu.nodes" label="Actions">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_RBr30E-IEfCyO64_2PFqEg" elementId="nodes_plugin.handledmenuitem.exit" label="Exit" command="_ZnP_cE-IEfCyO64_2PFqEg"/>
+      </children>
+    </mainMenu>
   </children>
+  <handlers xmi:id="_gZr8kE-IEfCyO64_2PFqEg" elementId="nodes_plugin.handler.0" contributionURI="bundleclass://nodes_plugin/handlers.ExitHandler" command="_ZnP_cE-IEfCyO64_2PFqEg"/>
+  <commands xmi:id="_ZnP_cE-IEfCyO64_2PFqEg" elementId="nodes_plugin.command.ronodesuiexit" commandName="ro.nodes.ui.exit"/>
   <addons xmi:id="__0UdgU6CEfCE4-cIOn63pQ" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
   <addons xmi:id="__0Udgk6CEfCE4-cIOn63pQ" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
   <addons xmi:id="__0Udg06CEfCE4-cIOn63pQ" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
