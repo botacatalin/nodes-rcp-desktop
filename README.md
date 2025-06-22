@@ -8,7 +8,7 @@
 
 [![GitHub][github-badge]][source]
 
-[source]: https://github.com/nodes-ro/eclipse-rcp-example.git  
+[source]: https://github.com/botacatalin/nodes-rcp-desktop  
 [github-badge]: https://img.shields.io/badge/GitHub-Source%20Code-blue?logo=github
 
 ---
