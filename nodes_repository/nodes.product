@@ -3,7 +3,6 @@
 
 <product name="Nodes" uid="nodes.product" id="nodes.product" application="org.eclipse.e4.ui.workbench.swt.E4Application" version="1.0.0" type="features" includeLaunchers="true" autoIncludeRequirements="true">
 
-
    <configIni use="default">
    </configIni>
 
@@ -14,13 +13,11 @@
 
    <windowImages/>
 
-
    <launcher name="nodes">
       <win useIco="false">
          <bmp/>
       </win>
    </launcher>
-
 
    <vm>
    </vm>
@@ -30,8 +27,9 @@
 
    <features>
       <feature id="nodes_feature" installMode="root"/>
-      <feature id="org.eclipse.platform" installMode="root"/>
-      <feature id="org.eclipse.rcp" installMode="root"/>
+      <feature id="org.eclipse.e4.rcp" installMode="root"/>
+      <feature id="org.eclipse.emf.common" installMode="root"/>
+      <feature id="org.eclipse.emf.ecore" installMode="root"/>
    </features>
 
    <configurations>
