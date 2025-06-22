@@ -1,0 +1,4 @@
+# _config.yml
+title: Nodes RCP Desktop Application
+description: "A step-by-step tutorial on how to create modern, cross-platform Eclipse RCP desktop applications using Maven and Tycho."
+theme: jekyll-theme-minimal
