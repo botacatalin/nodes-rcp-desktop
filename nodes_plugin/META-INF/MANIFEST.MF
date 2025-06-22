@@ -3,6 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: Nodes Plugin
 Bundle-SymbolicName: nodes_plugin;singleton:=true
 Bundle-Version: 0.0.1.qualifier
+Export-Package: parts
 Require-Bundle: org.eclipse.core.runtime;bundle-version="3.33.100",
  org.eclipse.e4.core.di;bundle-version="1.9.600",
  org.eclipse.e4.core.contexts;bundle-version="1.13.100",
