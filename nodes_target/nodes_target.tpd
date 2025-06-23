@@ -4,3 +4,7 @@ location "https://download.eclipse.org/releases/2025-06/" eclipse-2025-06 {
 	org.eclipse.platform.feature.group
 	org.eclipse.equinox.executable.feature.group
 }
+
+location "https://download.eclipse.org/nebula/updates/release/" nebula {
+		org.eclipse.nebula.widgets.geomap 
+}

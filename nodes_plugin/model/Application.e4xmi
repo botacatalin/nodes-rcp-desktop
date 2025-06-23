@@ -3,7 +3,7 @@
   <children xsi:type="basic:TrimmedWindow" xmi:id="_RCVxQE6aEfCE4-cIOn63pQ" elementId="nodes_plugin.trimmedwindow.nodes" label="Nodes Application" iconURI="platform:/plugin/nodes_plugin/icons/hexagon.png">
     <children xsi:type="basic:PartSashContainer" xmi:id="_utyJwE-HEfCyO64_2PFqEg" elementId="nodes_plugin.partsashcontainer.0">
       <children xsi:type="basic:PartStack" xmi:id="_wbawQE-HEfCyO64_2PFqEg" elementId="nodes_plugin.partstack.0">
-        <children xsi:type="basic:Part" xmi:id="_xMTaoE-HEfCyO64_2PFqEg" elementId="nodes_plugin.part.generalview" label="General View"/>
+        <children xsi:type="basic:Part" xmi:id="_xMTaoE-HEfCyO64_2PFqEg" elementId="nodes_plugin.part.generalview" contributionURI="bundleclass://nodes_plugin/parts.Map" label="Map View"/>
       </children>
     </children>
     <mainMenu xmi:id="_PSekAE-IEfCyO64_2PFqEg" elementId="nodes_plugin.menu.0">
