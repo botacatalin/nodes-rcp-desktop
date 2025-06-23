@@ -9,7 +9,7 @@
             name="Nodes">
          <property
                name="applicationXMI"
-               value="nodes_plugin/Application.e4xmi">
+               value="platform:/plugin/nodes_plugin/model/Application.e4xmi">
          </property>
       </product>
    </extension>
