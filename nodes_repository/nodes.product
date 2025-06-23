@@ -3,7 +3,6 @@
 
 <product name="Nodes" uid="nodes.product" id="nodes.product" application="org.eclipse.e4.ui.workbench.swt.E4Application" version="1.0.0" type="features" includeLaunchers="true" autoIncludeRequirements="true">
 
-
    <configIni use="default">
    </configIni>
 
@@ -16,12 +15,14 @@
 
    <windowImages/>
 
+   <splash
+      location="nodes_plugin"
+      handlerType="interactive" />
    <launcher name="nodes">
       <win useIco="false">
          <bmp/>
       </win>
    </launcher>
-
 
    <vm>
    </vm>
