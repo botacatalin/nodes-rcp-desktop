@@ -21,10 +21,11 @@
   </properties>
 
   <!-- So Maven can fetch Tycho’s plugins -->
+  <!-- Maven normally looks in Maven Central for plug-ins, but Tycho is published to Eclipse’s own repo -->
   <pluginRepositories>
     <pluginRepository>
       <id>eclipse-tycho-releases</id>
-      <url>https://repo.eclipse.org/content/repositories/tycho-releases/</url>
+      <url>https://repo.eclipse.org/content/repositories/tycho/</url>
       <releases>
         <enabled>true</enabled>
       </releases>
@@ -36,9 +37,8 @@
 
   <build>
   
-  
-  
     <!-- Load Tycho early so Eclipse packaging is recognized -->
+    <!-- Declares Tycho as a core extension so Maven loads it before doing anything else -->
     <extensions>
       <extension>
         <groupId>org.eclipse.tycho</groupId>
@@ -47,9 +47,8 @@
       </extension>
     </extensions>
 
-
-
   <plugins>
+  	<!--Tycho which target platform (a .target file packaged as the nodes_target module) the build should resolve against -->
     <plugin>
       <groupId>org.eclipse.tycho</groupId>
       <artifactId>target-platform-configuration</artifactId>
@@ -64,6 +63,7 @@
       </configuration>
     </plugin>
   </plugins>
+  
     <!-- Central version management for Tycho plugins -->
     <pluginManagement>
       <plugins>
@@ -73,12 +73,14 @@
           <artifactId>tycho-maven-plugin</artifactId>
           <version>${tycho-version}</version>
         </plugin>
+        
         <!-- Target‐platform configurator -->
         <plugin>
           <groupId>org.eclipse.tycho</groupId>
           <artifactId>target-platform-configuration</artifactId>
           <version>${tycho-version}</version>
         </plugin>
+        
         <!-- P2 repository assembler -->
         <plugin>
           <groupId>org.eclipse.tycho</groupId>
